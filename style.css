@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans&family=Source+Serif+4:wght@500&family=Ubuntu:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.card {
+    height: auto;
+    width: 20rem;
+    /* margin: auto; */
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 2%;
+}
+
+form {
+    padding: 2% 5%;
+}
+
+h2.heading {
+    padding: 5%;
+    position: relative;
+    top: 15px;
+    font-family: 'Source Serif 4',serif;
+}
+
+.name {
+    margin: 5% 2% 0;
+}
+
+/* .pass {
+    margin: 25% 2% 5%;
+} */
+
+.name input {
+    position: relative;
+    font-size: 20px;
+    padding: 3%;
+    border-style: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    width: 100%;
+    background: transparent;
+}
+
+.Ulabel {
+    position: relative;
+    /* left: 17%; */
+    right: 40%;
+    top: -28px;
+    /* top: 34%; */
+    font-size: 20px;
+    cursor: text;
+    transition: top 200ms ease-in;
+    background: transparent;
+}
+
+.name input:focus~.Ulabel,
+.name input:valid~.Ulabel {
+    top: -60px;
+}
+
+.Plabel {
+    position: relative;
+    right: 35%;
+    top: -29px;
+    /* left: -35%; */
+    /* top: 55%; */
+    font-size: 20px;
+    cursor: text;
+    transition: top 200ms ease-in;
+}
+
+.name input:focus~.Plabel,
+.name input:valid~.Plabel {
+    top: -60px;
+}
+
+.attr {
+    margin-left: 50%;
+    position: relative;
+    top: -10px;
+    font-size: 15px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+/* .attr label {
+    color: white;
+} */
+
+.attr a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in;
+    margin-left: 30px;
+}
+
+a:hover {
+    color: #121358;
+}
+
+.log_but {
+    margin-top: 6%;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    width: 50%;
+    padding: 2% 4%;
+    border: none;
+    color: #121358;
+    font-weight: 800;
+    font-size: 1.2rem;
+    /* transition: 0.6s ease-in-out; */
+    border-radius: 6px;
+    font-family: 'Source Serif 4',sans-serif;
+}
+
+/* button:hover {
+    width: 100%;
+    color: #1b4984;
+    color: #121358;
+} */
+
+/* .create_account{
+     border-top: 1px solid black;
+     text-align: center;
+} */
+
+/* .create_account a {
+     position: relative;
+     text-decoration: none;
+     color: black;
+     transition: 0.3s ease-in;
+     font-size: 1.3rem;
+} */
+h3 {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    margin: 7% 0;
+    font-family: 'Source Serif 4',sans-serif;
+}
+
+h3:before {
+    background-color: #fff;
+    display: block;
+    width: 60px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+h3:after {
+    background-color: #fff;
+    display: block;
+    width: 60px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+h3 span a {
+    text-decoration: none;
+    font-weight: lighter;
+    transition: 0.3s ease-in;
+}
+
+h3 span a:hover {
+    color: #121358;
+}
+@media screen and (max-width: 360px) {
+    body {
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .card{
+        width: 90%;
+    }
+    h3:after{
+        width: 10%;
+    }
+    h3:before {
+        width: 10%;
+    }
+    .attr a {
+        margin-left: 0;
+    }
+}
